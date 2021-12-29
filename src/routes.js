@@ -1,9 +1,9 @@
-const express = require("express");
+import express from "express";
 
-const UserController = require("./controllers/UserController");
-const AddressController = require("./controllers/AddressController");
-const TechController = require("./controllers/TechController");
-const ReportController = require("./controllers/ReportController");
+import UserController from "./controllers/UserController.js";
+import AddressController from "./controllers/AddressController.js";
+import TechController from "./controllers/TechController.js";
+import ReportController from "./controllers/ReportController.js";
 
 const routes = express.Router();
 
@@ -19,4 +19,4 @@ routes.delete("/users/:user_id/techs", TechController.delete);
 
 routes.get("/report", ReportController.show);
 
-module.exports = routes;
+export default routes;

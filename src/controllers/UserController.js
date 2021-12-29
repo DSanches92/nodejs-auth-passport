@@ -1,7 +1,7 @@
-const bcrypt = require("bcryptjs");
-const User = require("../models/User.js");
+import bcrypt from "bcryptjs";
+import User from "../models/User.js";
 
-module.exports = {
+export default {
   async index(req, res) {
     const users = await User.findAll();
 
@@ -15,5 +15,5 @@ module.exports = {
     const user = await User.create({ nome, email, senha });
 
     return res.json(user);
-  }
+  },
 };

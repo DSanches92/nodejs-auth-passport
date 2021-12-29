@@ -1,7 +1,7 @@
-const Tech = require("../models/Tech");
-const User = require("../models/User");
+import Tech from "../models/Tech.js";
+import User from "../models/User.js";
 
-module.exports = {
+export default {
   async index(req, res) {
     const { user_id } = req.params;
 

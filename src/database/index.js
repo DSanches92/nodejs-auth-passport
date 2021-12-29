@@ -1,9 +1,9 @@
-const Sequelize = require("sequelize");
-const dbConfig = require("../config/config.json");
+import Sequelize from "sequelize";
+import dbConfig from "../config/config.js";
 
-const User = require("../models/User");
-const Address = require("../models/Address");
-const Tech = require("../models/Tech");
+import User from "../models/User.js";
+import Address from "../models/Address.js";
+import Tech from "../models/Tech.js";
 
 const connection = new Sequelize(dbConfig.development);
 
@@ -15,4 +15,4 @@ User.associate(connection.models);
 Address.associate(connection.models);
 Tech.associate(connection.models);
 
-module.exports = connection;
+export default connection;

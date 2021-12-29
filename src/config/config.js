@@ -1,5 +1,5 @@
-{
-  "development": {
+export default {
+  development: {
     "username": "danilo",
     "password": "@{Danilo123*}",
     "database": "passport_auth",
@@ -9,17 +9,7 @@
       "timestamps": true
     }
   },
-  "test": {
-    "username": "root",
-    "password": null,
-    "database": "database_test",
-    "host": "127.0.0.1",
-    "dialect": "mysql",
-    "define": {
-      "timestamps": true
-    }
-  },
-  "production": {
+  production: {
     "username": "root",
     "password": null,
     "database": "database_production",
@@ -29,4 +19,4 @@
       "timestamps": true
     }
   }
-}
+};

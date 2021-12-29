@@ -1,7 +1,7 @@
-const Address = require("../models/Address");
-const User = require("../models/User");
+import Address from "../models/Address.js";
+import User from "../models/User.js";
 
-module.exports = {
+export default {
   async index(req, res) {
     const { user_id } = req.params;
 

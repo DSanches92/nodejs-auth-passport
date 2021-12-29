@@ -1,13 +1,14 @@
 {
   "name": "nodejs-auth-passport",
   "version": "1.0.0",
-  "description": "",
+  "description": "Aplicativo para testes da autenticação via Passport, utilizando MySQL/Sequelize",
   "main": "server.js",
   "scripts": {
     "dev": "nodemon src/server.js"
   },
-  "author": "",
+  "author": "Danilo Sanches da Silva",
   "license": "ISC",
+  "type": "module",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "express": "^4.17.2",
