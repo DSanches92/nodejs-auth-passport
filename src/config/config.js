@@ -1,5 +1,5 @@
 export default {
-  development: {
+  "development": {
     "username": "danilo",
     "password": "@{Danilo123*}",
     "database": "passport_auth",
@@ -9,7 +9,7 @@ export default {
       "timestamps": true
     }
   },
-  production: {
+  "production": {
     "username": "root",
     "password": null,
     "database": "database_production",
@@ -18,5 +18,6 @@ export default {
     "define": {
       "timestamps": true
     }
-  }
+  },
+  "secret": "e8Ckb2Vu5qE7ebMJ96wNWxV23un9VUkZ"
 };
